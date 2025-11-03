@@ -17,12 +17,12 @@ const Hero = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center text-primary-foreground">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
-            Your Name Here
+            Hi, I'm Ayush Gupta
           </h1>
           <p className="text-xl md:text-2xl mb-4 font-semibold animate-fade-in">
             Full Stack Developer | CS Student | Tech Enthusiast
           </p>
-          <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto opacity-90 animate-fade-in">
+          <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto opacity-90 animate-fade-in text-white/[80%]">
             Passionate about building scalable web applications and solving complex problems. 
             Currently pursuing Computer Science and seeking opportunities to create impact through technology.
           </p>
@@ -30,7 +30,7 @@ const Hero = () => {
           <div className="flex flex-wrap gap-4 justify-center mb-8 animate-fade-in">
             <Button 
               size="lg" 
-              className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 shadow-glow"
+              className="bg-primary-foreground text-primary hover:bg-primary-foreground/10 hover:text-white border-2 shadow-glow"
               onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
             >
               View Projects
@@ -39,7 +39,7 @@ const Hero = () => {
             <Button 
               size="lg" 
               variant="outline"
-              className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10"
+              className="bg-primary-foreground text-primary hover:bg-primary-foreground/10 hover:text-white border-2 shadow-glow"
             >
               Download Resume
               <Download className="ml-2 h-5 w-5" />
